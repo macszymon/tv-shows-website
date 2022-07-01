@@ -1,8 +1,8 @@
 .hero {
-  align-items: center;
+  align-items:flex-end;
   display: flex;
-  height: calc(100vh - 4.875rem);
-  padding-inline: 5em;
+  height: 100vh;
+  padding: 5em;
   position: relative;
 }
 
@@ -19,23 +19,40 @@
   width: 60%;
 }
 
-.hero__genres {
-  font-size: 1rem;
+.hero__header {
+  font-size: 6.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.hero__date {
+  color: var(--textMainLight);
+  font-size: 2rem;
   font-weight: 500;
 }
 
-.hero__header {
-  font-size: 4rem;
-}
-
-.hero__rating {
-  margin-bottom: 2rem;
-}
-
-.hero__rating span {
-  color: var(--textMainLight);
+.hero__date span {
+  color: var(--textMain);
+  font-weight: 700;
 }
 
 .hero__desc {
+  color: var(--textMainLight);
+  font-size: 1.1rem;
   line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.hero__btn {
+  background-color: var(--textTertiary);
+  border: none;
+  color: var(--textMain);
+  font-weight: 700;
+  padding: 1em 2em;
+  transition: all .2s ease-in-out;
+}
+
+.hero__btn:hover {
+  filter: brightness(1.2);
+  transform: scale(1.1);
 }

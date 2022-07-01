@@ -1,6 +1,6 @@
 :root {
   /* Fonts */
-  --fontMain: 'Mulish', sans-serif;
+  --fontMain: 'DM Sans', sans-serif;
   --fontSecondary: 'Open Sans', sans-serif;
 
   /* Colors */
@@ -8,7 +8,7 @@
   --textMain: #F9F9F9;
   --textMainLight: #F9F9F9AB;
   --textSecondary: #0F64D7;
-  --textTertiary: #BE123C;
+  --textTertiary: #DB0016;
   --secondary: #16181E;
   --tertiary: #21242D;
 }
@@ -35,7 +35,7 @@ button {
 }
 
 input, input::placeholder {
-  color: var(--textMainLight);
+  color: var(--textMain);
   font-family: var(--fontMain);
 }
 

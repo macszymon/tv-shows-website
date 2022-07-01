@@ -1,9 +1,12 @@
 .nav {
   align-items: center;
-  background-color: var(--secondary);
   display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
   justify-content: space-between;
   padding: 1em 5em;
+  z-index: 2;
 }
 
 .nav__list {
@@ -23,15 +26,13 @@
 }
 
 .nav__input {
-  background-color: var(--tertiary);
-  border: 1px solid transparent;
-  border-radius: .5rem;
-  padding: .8em;
+  background-color: transparent;
+  border: 1px solid var(--main);
+  padding: .5em 1em;
   width: 100%;
 }
 
 .nav__input:focus {
-  border: 1px solid var(--textMainLight);
   outline: none;
 }
 

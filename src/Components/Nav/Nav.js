@@ -10,10 +10,12 @@ function Nav() {
         <li className="nav__item">Home</li>
         <li className="nav__item">Genres</li>
         <li className="nav__item">Trending</li>
+        <li className="nav__item">Coming Soon</li>
+        <li className="nav__item">Favourites</li>
       </ul>
       <form className="nav__search">
         <input type="text" className="nav__input" placeholder='Search' />
-        <AiOutlineSearch size={20} style={{color: '#F9F9F9AB'}}/>
+        <AiOutlineSearch size={20}/>
       </form>
     </nav>
   )
