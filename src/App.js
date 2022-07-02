@@ -9,12 +9,7 @@ function App() {
   const [loading, setLoading] = useState(true)
 
   async function fetchShows() {
-    //   const res = await fetch(`https://api.tvmaze.com/shows?page=0`)
-    //   const data = await res.json()
-    //   setShows(data)
-    //   setLoading(false)
-    
-    for (let i = 0; i < 251; i++) {
+     for (let i = 0; i < 251; i++) {
       const res = await fetch(`https://api.tvmaze.com/shows?page=${i}`)
       const data = await res.json()
       setShows(prev => [...prev, ...data])
@@ -34,7 +29,7 @@ function App() {
         <Nav/>
         <Hero />
         <Trending trendingShows={shows.filter(item => item.weight >= 100 && item.status === 'Running')} />
-        <ComingSoon comingShows={shows.filter(item => item.weight >= 98 && item.status === 'In Development')} />
+        <ComingSoon comingShows={shows.filter(item => item.weight >= 99 && item.status === 'In Development')} />
     </div> 
   );
 }

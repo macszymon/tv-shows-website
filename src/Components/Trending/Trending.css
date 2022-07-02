@@ -1,0 +1,18 @@
+.trending {
+  padding: 2em 5em;
+}
+
+.trending__heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.trending__more {
+  align-items: center;
+  color: var(--textMain);
+  display: flex;
+  gap: .3rem;
+  padding: .5em 1em;
+}

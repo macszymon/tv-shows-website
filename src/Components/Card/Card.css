@@ -1,0 +1,40 @@
+.card {
+  width: 210px;
+}
+
+.card__img {
+  height: 295px;
+  object-fit: cover;
+}
+
+.card__text {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__network {
+  color: var(--textMainLight);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card__name {
+  font-size: 1.2rem;
+}
+
+.card__rating {
+  align-items: center;
+  display: flex;
+  gap: .2rem;
+}
+
+.card__genres {
+  color: var(--textMainLight);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: .8rem;
+  font-weight: 500;
+  gap: .3rem;
+}

@@ -19,7 +19,7 @@ function Hero() {
   return (
     !loading &&
     <section className='hero'>
-      <img className='hero__img' src={heroShow._embedded.images.find(item => item.id === 1024341).resolutions.original.url}/>
+      <img className='hero__img' src={heroShow._embedded.images.find(item => item.id === 1026398).resolutions.original.url}/>
       <div className="hero__text">
       <h2 className='hero__date'>Coming up in <span>August 21</span></h2>
       <h1 className="hero__header">{heroShow.name}</h1>

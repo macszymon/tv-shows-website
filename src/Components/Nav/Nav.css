@@ -26,13 +26,14 @@
 }
 
 .nav__input {
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, .3);
   border: 1px solid var(--main);
   padding: .5em 1em;
   width: 100%;
 }
 
 .nav__input:focus {
-  outline: none;
+  outline: 1px solid var(--main);
+  background-color: rgba(0, 0, 0, .5);
 }
 
