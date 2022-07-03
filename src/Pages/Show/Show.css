@@ -1,0 +1,117 @@
+.show {
+  margin-inline: auto;
+  padding: 6em 5em;
+}
+
+.show__heading {
+  align-items: center;
+  border-bottom: 2px solid var(--textTertiary);
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 1em;
+  width: 100%;
+}
+
+.show__header span {
+  color: var(--textMainLight);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.show__flex {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+}
+
+.show__popularity {
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
+  gap: .2rem;
+}
+
+.show__rating {
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
+  gap: .2rem;
+}
+
+.show__favourite {
+  font-size: 2rem;
+}
+
+.show__main {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.show__img {
+  height: 421px;
+  object-fit: cover;
+  width: 300px;
+}
+
+.show__about{
+  width: 65%;
+}
+
+.show__about h2 {
+  margin-bottom: 1rem;
+}
+
+.show__desc {
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.show__genres {
+  display: flex;
+  gap: 1rem;
+}
+
+.show__genre {
+  border: 2px solid var(--textTertiary);
+  color: var(--textMain);
+  font-size: .9rem;
+  padding: .3em .6em;
+  transition: background-color .3s ease-in-out;
+}
+
+.show__genre:hover {
+  background-color: var(--textTertiary);
+}
+
+.show__more {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.show__more button {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--textMainLight);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all .3s ease-in-out;
+}
+
+.show__more button:hover {
+  color: var(--textMain);
+}
+
+.show__more button.active {
+  border-bottom: 2px solid var(--textTertiary);
+  color: var(--textMain);
+}

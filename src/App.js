@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Routes, Route} from "react-router-dom";
 import Nav from "./Components/Nav/Nav";
 import Home from './Pages/Home/Home';
-import Details from './Pages/Details/Details';
+import Show from './Pages/Show/Show';
 
 function App() {
   const [shows, setShows] = useState([])
@@ -29,7 +29,7 @@ function App() {
         <Nav/>
         <Routes>
           <Route path='/' element={<Home shows={shows}/>}/>
-          <Route path='/details/:id' element={<Details />}/>
+          <Route path='/show/:id' element={<Show />}/>
         </Routes>
 
     </> 

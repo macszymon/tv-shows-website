@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 function Card({show}) {
 
   return (
-    <Link to={`/details/${show.id}`} className='card'>
+    <Link to={`/show/${show.id}`} className='card'>
       <img className='card__img' src={show.image  ? show.image.medium : 'http://placehold.jp/210x295.png'}/>
       <div className="card__text">
 

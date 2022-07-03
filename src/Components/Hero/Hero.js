@@ -27,7 +27,7 @@ function Hero() {
       <h1 className="hero__header">{heroShow.name}</h1>
       <div className='hero__desc' dangerouslySetInnerHTML={{__html: heroShow.summary}}></div>
       <div className="hero__action">
-      <Link to='/details/44778' className='hero__btn'>Learn More</Link>
+      <Link to='/show/44778' className='hero__btn'>Learn More</Link>
       <a href='https://www.youtube.com/watch?v=Wg86eQkdudI' target='_blank' className='hero__btn-trailer'><BsPlayCircle size={32}/>Watch Trailer</a>
       </div>
       </div>

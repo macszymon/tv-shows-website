@@ -12,7 +12,7 @@ function Nav() {
         <li className="nav__item"><NavLink to='/b'>Genres</NavLink></li>
         <li className="nav__item"><NavLink to='/c'>Trending</NavLink></li>
         <li className="nav__item"><NavLink to='/d'>Coming Soon</NavLink></li>
-        <li className="nav__item"><NavLink to='/e'>Favourites</NavLink></li>
+        <li className="nav__item"><NavLink to='/e'>Bookmarked</NavLink></li>
       </ul>
       <form className="nav__search">
         <input type="text" className="nav__input" placeholder='Search' />
