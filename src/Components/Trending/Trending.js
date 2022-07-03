@@ -22,7 +22,7 @@ function Trending({trendingShows}) {
       slidesPerView={'auto'}
       navigation
     >
-      {trendingShows.map(item => <SwiperSlide key={item.id} style={{width: 'auto'}}><Card show={item}/></SwiperSlide>)}
+      {trendingShows.map(item => <SwiperSlide key={item.id} style={{width: '210px'}}><Card show={item}/></SwiperSlide>)}
     </Swiper>
     </section>
   )

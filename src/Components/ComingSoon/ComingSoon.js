@@ -21,7 +21,7 @@ function ComingSoon({comingShows}) {
       slidesPerView={'auto'}
       navigation
       >
-      {comingShows.map(item => <SwiperSlide key={item.id} style={{width: 'auto'}}><Card show={item} /></SwiperSlide>)}
+      {comingShows.map(item => <SwiperSlide key={item.id} style={{width: '210px'}}><Card show={item} /></SwiperSlide>)}
     </Swiper>
     </section>
   )

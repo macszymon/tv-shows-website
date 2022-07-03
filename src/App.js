@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
+import { Routes, Route} from "react-router-dom";
 import Nav from "./Components/Nav/Nav";
-import Hero from './Components/Hero/Hero'
-import Trending from './Components/Trending/Trending';
-import ComingSoon from './Components/ComingSoon/ComingSoon';
+import Home from './Pages/Home/Home';
+import Details from './Pages/Details/Details';
 
 function App() {
   const [shows, setShows] = useState([])
@@ -25,12 +25,14 @@ function App() {
 
   return (
     loading ? <h1>Loading...</h1> :
-    <div> 
+    <> 
         <Nav/>
-        <Hero />
-        <Trending trendingShows={shows.filter(item => item.weight >= 100 && item.status === 'Running')} />
-        <ComingSoon comingShows={shows.filter(item => item.weight >= 99 && item.status === 'In Development')} />
-    </div> 
+        <Routes>
+          <Route path='/' element={<Home shows={shows}/>}/>
+          <Route path='/details/:id' element={<Details />}/>
+        </Routes>
+
+    </> 
   );
 }
 

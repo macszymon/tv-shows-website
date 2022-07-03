@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import {Link} from 'react-router-dom'
+import {BsPlayCircle} from 'react-icons/bs'
 import './Hero.css'
 
 function Hero() {
@@ -24,7 +26,10 @@ function Hero() {
       <h2 className='hero__date'>Coming up in <span>August 21</span></h2>
       <h1 className="hero__header">{heroShow.name}</h1>
       <div className='hero__desc' dangerouslySetInnerHTML={{__html: heroShow.summary}}></div>
-      <button className='hero__btn'>See More</button>
+      <div className="hero__action">
+      <Link to='/details/44778' className='hero__btn'>Learn More</Link>
+      <a href='https://www.youtube.com/watch?v=Wg86eQkdudI' target='_blank' className='hero__btn-trailer'><BsPlayCircle size={32}/>Watch Trailer</a>
+      </div>
       </div>
     </section>
   )

@@ -43,6 +43,12 @@
   margin-bottom: 1rem;
 }
 
+.hero__action {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+
 .hero__btn {
   background-color: var(--textTertiary);
   border: none;
@@ -55,4 +61,10 @@
 .hero__btn:hover {
   filter: brightness(1.2);
   transform: scale(1.1);
+}
+
+.hero__btn-trailer {
+  align-items: center;
+  display: flex;
+  gap: .4rem;
 }

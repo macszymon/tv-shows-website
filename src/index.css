@@ -20,7 +20,7 @@
 }
 
 body {
-  background-color: var(--secondary);
+  background-color: var(--tertiary);
   color: var(--textMain);
   font-family: var(--fontMain);
 }
