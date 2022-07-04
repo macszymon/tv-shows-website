@@ -3,10 +3,15 @@
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, 190px);
   justify-content: center;
+  padding: 2em 0;
 }
 
 .crew__person {
-  background-color: var(--secondary);
+  transition: transform .3s ease-in-out;
+}
+
+.crew__person:hover {
+  transform: translateY(-10px);
 }
 
 .crew__img {
@@ -17,10 +22,11 @@
 
 .crew__text {
   padding: 1em;
+  text-align: center;
 }
 
 .crew__name {
-  font-size: .9rem;
+  font-size: 1.1rem;
 }
 
 .crew__type {

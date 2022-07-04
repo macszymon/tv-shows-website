@@ -1,0 +1,32 @@
+.seasons {
+  display: grid;
+  gap: 2rem;
+  padding: 2em 0;
+}
+
+.season {
+  align-items: flex-start;
+  display: flex;
+  gap: 2rem;
+}
+
+.season__img {
+  width: 150px;
+  object-fit: cover;
+}
+
+.season__header {
+  font-size: 1.3rem;
+  margin-bottom: .2rem;
+}
+
+.season__header span {
+  color: var(--textMainLight);
+  font-size: 1.1rem;
+}
+
+.season__episodes {
+  color: var(--textMainLight);
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}

@@ -3,6 +3,7 @@ import './Crew.css';
 
 function Crew({ crew }) {
   return (
+    crew.length > 0 ?
     <section className='crew'>
       {crew.map((item, index) => {
         return (
@@ -23,7 +24,7 @@ function Crew({ crew }) {
           </div>
         );
       })}
-    </section>
+    </section> : <h2>No crew info yet</h2>
   );
 }
 

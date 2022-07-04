@@ -1,4 +1,4 @@
-.cast {
+.characters {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, 190px);
@@ -6,35 +6,30 @@
   padding: 2em 0;
 }
 
-.cast__person {
+.characters__person {
   transition: transform .3s ease-in-out;
 }
 
-.cast__person:hover {
+.characters__person:hover {
   transform: translateY(-10px);
 }
 
-.cast__img {
+.characters__img {
   object-fit: cover;
   width: 190px;
   height: 250px;
 }
 
-.cast__text {
+.characters__text {
   padding: 1em;
   text-align: center;
 }
 
-.cast__name {
-  font-size: 1.1rem;
+.characters__name {
+  font-size: 1rem;
   margin-bottom: .5rem;
 }
 
-.cast__character {
-  color: var(--textMainLight);
-  font-size: .9rem;
-}
-
-.cast__character span {
+.characters__character span {
   font-weight: 400;
 }
