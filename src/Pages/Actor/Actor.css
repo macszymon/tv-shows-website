@@ -1,0 +1,59 @@
+.actor {
+  padding: 6em 5em;
+}
+
+.actor__heading {
+  border-bottom: 2px solid var(--textTertiary);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1em;
+  width: 100%;
+}
+
+.actor__header {
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+}
+
+.actor__header span {
+  color: var(--textMainLight);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.actor__img {
+  height: 421px;
+  object-fit: cover;
+  width: 300px;
+}
+
+.actor__info {
+  color: var(--textMainLight);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.actor__main {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.actor__shows {
+  width: 70%;
+}
+
+.actor__shows h2 {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+}
+
+.actor__show img {
+  margin-bottom: 1rem;
+}
+
+.actor__show h4 {
+  color: var(--textMainLight);
+}

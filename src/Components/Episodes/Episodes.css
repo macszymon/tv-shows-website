@@ -1,0 +1,64 @@
+.episodes__seasons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.episodes__season {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--textMainLight);
+  font-size: 1rem;
+}
+.episodes__season.active {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--textTertiary);
+  color: var(--textMain);
+  font-size: 1rem;
+}
+
+.episode {
+  background-color: var(--tertiary);
+  padding: 1em;
+  margin-bottom: 2rem;
+}
+
+.episode__main {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 4% 1fr 10% 4%;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.episode__number {
+  border-right: 2px solid var(--textTertiary);
+  font-size: 2rem;
+}
+
+.episode__name {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.episode__date {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.episode__rating {
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 500;
+  gap: .3rem;
+}
+
+.episode__desc {
+  color: var(--textMainLight);
+  grid-column: 2;
+}

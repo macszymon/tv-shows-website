@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import {AiFillStar, AiOutlineRise, AiOutlineHeart} from 'react-icons/ai'
+import {AiFillStar, AiOutlineRise} from 'react-icons/ai'
 import {BsBookmarkFill, BsBookmark} from 'react-icons/bs'
 import './Show.css'
 import Cast from '../../Components/Cast/Cast'
@@ -8,6 +8,8 @@ import Crew from '../../Components/Crew/Crew'
 import Characters from '../../Components/Characters/Characters'
 import Seasons from '../../Components/Seasons/Seasons'
 import ShowDetails from '../../Components/ShowDetails/ShowDetails'
+import Episodes from '../../Components/Episodes/Episodes'
+import Gallery from '../../Components/Gallery/Gallery'
 
 function Show() {
   const [activeTab, setActiveTab] = useState('Details')
@@ -72,8 +74,8 @@ function Show() {
         {activeTab === 'Characters' && <Characters characters={show._embedded.cast}/>}
         {activeTab === 'Crew' && <Crew crew={show._embedded.crew}/>}
         {activeTab === 'Seasons' && <Seasons seasons={show._embedded.seasons}/>}
-        {activeTab === 'Episodes' && <Cast cast={show._embedded.cast}/>}
-        {activeTab === 'Gallery' && <Cast cast={show._embedded.cast}/>}
+        {activeTab === 'Episodes' && <Episodes seasons={show._embedded.seasons} episodes={show._embedded.episodes}/>}
+        {activeTab === 'Gallery' && <Gallery images={show._embedded.images}/>}
     </main>
   )
 }

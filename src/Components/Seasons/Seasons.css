@@ -10,6 +10,12 @@
   gap: 2rem;
 }
 
+.season__info {
+  background-color: var(--tertiary);
+  width: 100%;
+  padding: 1em;
+}
+
 .season__img {
   width: 150px;
   object-fit: cover;
@@ -23,10 +29,12 @@
 .season__header span {
   color: var(--textMainLight);
   font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .season__episodes {
   color: var(--textMainLight);
   font-size: 1.1rem;
+  font-weight: 500;
   margin-bottom: .5rem;
 }
