@@ -1,18 +1,26 @@
-.coming-soon {
+.coming-soon-home {
   padding: 2em 5em;
+  margin-bottom: 2rem;
 }
 
-.coming-soon__heading {
+.coming-soon-home__heading {
   align-items: center;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
 
-.coming-soon__more {
+.coming-soon-home__more {
   align-items: center;
   color: var(--textMain);
   display: flex;
   gap: .3rem;
   padding: .5em 1em;
+}
+.coming-soon-home__more:hover {
+  text-decoration: underline var(--textTertiary);
+}
+
+.swiper-button-next, .swiper-button-prev { 
+  color: var(--textTertiary); 
 }

@@ -5,7 +5,6 @@ import Card from '../Card/Card'
 function Genres({shows}) {
   const [genre, setGenre] = useState('')
   const [showsByGenre, setShowsByGenre] = useState([])
-  const [loading, setLoading] = useState(true)
 
   function compare(a, b) {
     return b.weight - a.weight
@@ -14,8 +13,6 @@ function Genres({shows}) {
   useEffect(() => {
     async function filterShows() {
       setShowsByGenre(genre !== '' ? shows.filter(item => item.genres.includes(genre)).sort(compare).slice(0,100) : shows.sort(compare).slice(0,100)) 
-      setLoading(false)
-      
     }
     filterShows()
 

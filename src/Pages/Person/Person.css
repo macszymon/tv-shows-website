@@ -1,5 +1,5 @@
 .person {
-  padding: 6em 5em;
+  padding: 6em 5em 0 5em;
 }
 
 .person__heading {
@@ -48,7 +48,10 @@
   margin-bottom: 2rem;
   font-size: 1.6rem;
 }
+.person__slides {
+  margin-bottom: 2rem;
 
+}
 .person__slide {
   text-align: center;
 }
