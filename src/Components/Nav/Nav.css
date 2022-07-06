@@ -2,8 +2,7 @@
   align-items: center;
   display: flex;
   position: absolute;
-  left: 0;
-  right: 0;
+  width: 100%;
   justify-content: space-between;
   padding: 1em 5em;
   z-index: 2;
@@ -13,6 +12,11 @@
   align-items: center;
   display: flex;
   gap: 2rem;
+}
+
+.nav__item {
+  color: var(--textMain);
+  font-size: 1rem;
 }
 
 .nav__search {

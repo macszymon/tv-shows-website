@@ -22,7 +22,10 @@ function Results() {
 
   return (
     <main className='results'>
-      {loading ? <h1>Loading...</h1> : results.map(item => <Card key={item.show.id} show={item.show} />)}
+      <h1 className='results__header'>{results.length + ' results found'}</h1>
+      <div className="results__container">
+      {loading ? <h1 className='loading'>Loading...</h1> : results.map(item => <Card key={item.show.id} show={item.show} />)}
+      </div>
     </main>
   )
 }

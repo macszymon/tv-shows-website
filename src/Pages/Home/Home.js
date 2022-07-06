@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from '../../Components/Hero/Hero';
-import Trending from '../../Components/Trending/Trending';
-import ComingSoon from '../../Components/ComingSoon/ComingSoon';
+import Trending from '../../Components/TrendingHome/TrendingHome';
+import ComingSoon from '../../Components/ComingSoonHome/ComingSoonHome';
 
 function Home({shows}) {
   return (

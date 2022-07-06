@@ -1,59 +1,62 @@
-.actor {
+.person {
   padding: 6em 5em;
 }
 
-.actor__heading {
+.person__heading {
+  align-items: center;
   border-bottom: 2px solid var(--textTertiary);
+  display: flex;
   font-size: 1rem;
+  gap: 1rem;
   margin-bottom: 2rem;
   padding-bottom: 1em;
   width: 100%;
 }
 
-.actor__header {
+.person__header {
   align-items: center;
   display: flex;
   gap: .5rem;
 }
 
-.actor__header span {
+.person__header span {
   color: var(--textMainLight);
   font-size: 1.4rem;
   font-weight: 400;
 }
 
-.actor__img {
-  height: 421px;
+.person__img {
+  height: 200px;
   object-fit: cover;
-  width: 300px;
+  width: 130px;
 }
 
-.actor__info {
+.person__info {
   color: var(--textMainLight);
   font-size: 1.2rem;
   font-weight: 400;
 }
 
-.actor__main {
+.person__main {
   align-items: flex-start;
   display: flex;
   justify-content: space-between;
   gap: 1rem;
 }
 
-.actor__shows {
-  width: 70%;
-}
-
-.actor__shows h2 {
+.person__slides h2 {
   margin-bottom: 2rem;
   font-size: 1.6rem;
 }
 
-.actor__show img {
+.person__slide {
+  text-align: center;
+}
+
+.person__slide img {
   margin-bottom: 1rem;
 }
 
-.actor__show h4 {
+.person__slide h4 {
   color: var(--textMainLight);
 }

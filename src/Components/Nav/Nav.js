@@ -5,6 +5,7 @@ import './Nav.css'
 
 function Nav() {
   const [searchValue, setSearchValue] = useState('')
+  const [isGenresOpen, setIsGenresOpen] = useState(false)
   const navigate = useNavigate()
 
   function handleSubmit(e) {
@@ -18,15 +19,14 @@ function Nav() {
       <Link to='/' className="logo"><span>BEST</span><span className='logo__bottom'>SHOWS</span></Link>
       <ul className='nav__list'>
         <li className="nav__item"><NavLink to='/'>Home</NavLink></li>
-        <li className="nav__item"><NavLink to='/b'>Genres</NavLink></li>
-        <li className="nav__item"><NavLink to='/c'>Trending</NavLink></li>
-        <li className="nav__item"><NavLink to='/d'>Coming Soon</NavLink></li>
-        <li className="nav__item"><NavLink to='/e'>Bookmarked</NavLink></li>
+        <li className="nav__item"><NavLink to='/trending'>Trending</NavLink></li>
+        <li className="nav__item"><NavLink to='/comingsoon'>Coming Soon</NavLink></li>
       </ul>
       <form className="nav__search" onSubmit={e => handleSubmit(e)}>
         <input type="text" value={searchValue} onChange={e => setSearchValue(e.target.value)} className="nav__input" placeholder='Search' />
         <AiOutlineSearch size={20}/>
       </form>
+      
     </nav>
   )
 }

@@ -4,7 +4,8 @@ import Nav from "./Components/Nav/Nav";
 import Home from './Pages/Home/Home';
 import Show from './Pages/Show/Show';
 import Results from './Pages/Results/Results';
-import Actor from './Pages/Actor/Actor'
+import Person from './Pages/Person/Person'
+import Trending from './Components/Trending/Trending';
 
 function App() {
   const [shows, setShows] = useState([])
@@ -33,7 +34,8 @@ function App() {
           <Route path='/' element={<Home shows={shows}/>}/>
           <Route path='/show/:id' element={<Show />}/>
           <Route path='/search/:value' element={<Results />}/>
-          <Route path='/actor/:id' element={<Actor />}/>
+          <Route path='/person/:id' element={<Person />}/>
+          <Route path='/trending' element={<Trending shows={shows} />}/>
         </Routes>
 
     </> 

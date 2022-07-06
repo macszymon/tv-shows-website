@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import {AiFillStar, AiOutlineRise} from 'react-icons/ai'
-import {BsBookmarkFill, BsBookmark} from 'react-icons/bs'
 import './Show.css'
 import Cast from '../../Components/Cast/Cast'
 import Crew from '../../Components/Crew/Crew'
@@ -14,7 +13,6 @@ import Gallery from '../../Components/Gallery/Gallery'
 function Show() {
   const [activeTab, setActiveTab] = useState('Details')
   const [loading, setLoading] = useState(true)
-  const [isBookmarked, setIsBookmarked] = useState(false)
   const [show, setShow] = useState({})
   const {id} = useParams()
 
@@ -36,7 +34,7 @@ function Show() {
   return (
     loading ? <h1 className='loading'>Loading...</h1> :
     <main className='show'>
-      {show.image && <img className='show__background' src={show.image.original}/>}
+      {show.image && <img className='show__background' src={show.image.original} alt=''/>}
       <div className="show__heading">
         <div className="show__header">
         <h1>{show.name} <span>{show.premiered && '(' + show.premiered.split('-')[0] + ' - ' + (show.ended ? show.ended.split('-')[0] : 'now') + ')'}</span></h1>
@@ -47,16 +45,15 @@ function Show() {
         <h3 className="show__popularity">
         <AiOutlineRise/>{show.weight + '%'}
         </h3>
-        {isBookmarked ? <BsBookmarkFill onClick={() => setIsBookmarked(prev => !prev)} className='show__favourite'/> : <BsBookmark onClick={() => setIsBookmarked(prev => !prev)}  className='show__favourite'/>}
         </div>
       </div>
         <div className="show__main">
-          <img className='show__img' src={show.image  ? show.image.original : 'http://placehold.jp/210x295.png'}/>
+          <img className='show__img' src={show.image  ? show.image.original : 'http://placehold.jp/210x295.png'} alt='show poster'/>
           <div className="show__about">
             <h2>Overview</h2>
             <div className='show__desc' dangerouslySetInnerHTML={{__html: show.summary}}></div>
             <div className="show__genres">
-              {show.genres.map((item,index) => <Link to={`/genre/${item.toLowerCase()}`} className='show__genre' key={index}>{item}</Link>)}
+              {show.genres.map((item,index) => <span className='show__genre' key={index}>{item}</span>)}
             </div>
           </div>
         </div>

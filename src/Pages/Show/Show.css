@@ -103,11 +103,6 @@
   color: var(--textMain);
   font-size: .9rem;
   padding: .3em .6em;
-  transition: background-color .3s ease-in-out;
-}
-
-.show__genre:hover {
-  background-color: var(--textTertiary);
 }
 
 .show__more {

@@ -1,7 +1,14 @@
 .results {
+  padding: 6em 5em;
+}
+
+.results__header {
+  margin-bottom: 2rem;
+}
+
+.results__container {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, 210px);
   justify-content: center;
-  padding: 6em 5em;
 }

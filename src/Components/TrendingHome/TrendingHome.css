@@ -1,0 +1,22 @@
+.trending-home {
+  padding: 2em 5em;
+}
+
+.trending-home__heading {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.trending-home__more {
+  align-items: center;
+  color: var(--textMain);
+  display: flex;
+  gap: .3rem;
+  padding: .5em 1em;
+}
+
+.trending-home__more:hover {
+  text-decoration: underline var(--textTertiary);
+}
