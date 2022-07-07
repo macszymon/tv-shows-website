@@ -1,0 +1,32 @@
+.coming-soon {
+  padding: 5em 0;
+}
+
+.coming-soon__container {
+  padding: 2em 5em;
+}
+
+.coming-soon__container h1 {
+  margin-bottom: 2rem;
+}
+
+.coming-soon__shows {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, 210px);
+  justify-content: center;
+}
+
+@media (max-width: 950px) {
+  .coming-soon {
+    padding: 11em 0;
+  }
+
+  .coming-soon__container {
+    padding: 2em 1em;
+  }
+
+  .coming-soon__container h1 {
+    font-size: 1.5rem;
+  }
+}

@@ -18,10 +18,10 @@ function ComingSoon({shows}) {
   }, [])
 
   return (
-    <div className='trending'>
-    <div className="trending__container">
+    <div className='coming-soon'>
+    <div className="coming-soon__container">
       <h1>Coming Soon Shows</h1>
-     <div className="trending__shows">
+     <div className="coming-soon__shows">
       {showsByGenre.map(item => <Card key={item.id} show={item}/>)}
     </div>
     </div>

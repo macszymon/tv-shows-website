@@ -1,4 +1,6 @@
 .person {
+  margin-inline: auto;
+  max-width: 1500px;
   padding: 6em 5em 0 5em;
 }
 
@@ -62,4 +64,37 @@
 
 .person__slide h4 {
   color: var(--textMainLight);
+}
+
+@media (max-width: 950px) {
+  .person {
+    padding: 12em 1em 4em 1em;
+  }
+
+  .person__header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .2rem;
+    margin-bottom: 1rem;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .person__heading {
+    flex-direction: column;
+  }
+
+  .person__header {
+    font-size: 1.3rem;
+  }
+
+  .person__info {
+    font-size: 1rem;
+  }
+
+  .person__header span {
+    font-size: 1.1rem;
+  }
 }

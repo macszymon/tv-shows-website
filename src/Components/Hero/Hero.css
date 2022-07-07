@@ -79,3 +79,54 @@
   display: flex;
   gap: .4rem;
 }
+
+@media (max-width: 950px) {
+  .hero {
+    padding: 2em;
+  }
+
+  .hero__header {
+    font-size: 4.5rem;
+  }
+
+  .hero__date {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero {
+    padding: 2em 1em;
+  }
+
+  .hero__text {
+    width: 100%;
+  }
+
+  .hero__header {
+    font-size: 3rem;
+  }
+  
+  .hero__date {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+
+  .hero__date {
+    font-size: 1rem;
+  }
+
+  .hero__header {
+    font-size: 2.5rem;
+  }
+
+  .hero__desc {
+    font-size: .8rem;
+  }
+
+  .hero__action {
+    flex-direction: column;
+  }
+}

@@ -3,6 +3,8 @@
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, 190px);
   justify-content: center;
+  margin-inline: auto;
+  max-width: 1500px;
   padding: 2em 0;
 }
 

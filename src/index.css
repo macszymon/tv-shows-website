@@ -61,5 +61,5 @@ a {
   font-size: 5rem;
   inset: 0;
   justify-content: center;
-  position: absolute;
+  height: 70vh;
 }

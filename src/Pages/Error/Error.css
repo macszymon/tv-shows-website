@@ -1,0 +1,27 @@
+.error {
+  align-items: center;
+  background-color: var(--textTertiary);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  inset: 0;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  z-index: 10;
+}
+
+.error h1 {
+  font-size: 3rem;
+}
+
+.error h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.error a {
+  border: 2px solid var(--main);
+  border-radius: 2rem;
+  padding: .4em 1em;
+}

@@ -1,6 +1,8 @@
 .seasons {
   display: grid;
   gap: 2rem;
+  margin-inline: auto;
+  max-width: 1500px;
   padding: 2em 0;
 }
 
@@ -37,4 +39,16 @@
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: .5rem;
+}
+
+@media (max-width: 650px) {
+  .seasons {
+    gap: 4rem;
+  }
+
+  .season {
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }

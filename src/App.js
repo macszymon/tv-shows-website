@@ -8,6 +8,7 @@ import Person from './Pages/Person/Person'
 import Trending from './Components/Trending/Trending';
 import ComingSoon from './Components/ComingSoon/ComingSoon';
 import Footer from './Components/Footer/Footer';
+import Error from './Pages/Error/Error';
 
 function App() {
   const [shows, setShows] = useState([])
@@ -39,6 +40,7 @@ function App() {
           <Route path='/person/:id' element={<Person />}/>
           <Route path='/trending' element={<Trending shows={shows} />}/>
           <Route path='/comingsoon' element={<ComingSoon shows={shows} />}/>
+          <Route path='*' element={<Error/>}/>
         </Routes>
         <Footer/>
     </> 

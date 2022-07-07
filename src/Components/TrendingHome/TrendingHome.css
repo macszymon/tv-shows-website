@@ -20,3 +20,13 @@
 .trending-home__more:hover {
   text-decoration: underline var(--textTertiary);
 }
+
+@media (max-width: 950px) {
+  .trending-home {
+    padding: 2em 1em;
+  }
+
+  .trending-home__heading h2 {
+    font-size: 1.1rem;
+  }
+}

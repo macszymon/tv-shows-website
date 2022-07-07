@@ -24,3 +24,13 @@
 .swiper-button-next, .swiper-button-prev { 
   color: var(--textTertiary); 
 }
+
+@media (max-width: 950px) {
+  .coming-soon-home {
+    padding: 2em 1em;
+  }
+
+  .coming-soon-home__heading h2 {
+    font-size: 1.1rem;
+  }
+}

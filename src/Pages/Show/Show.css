@@ -30,6 +30,8 @@
   font-size: 1rem;
   justify-content: space-between;
   margin-bottom: 2rem;
+  margin-inline: auto;
+  max-width: 1500px;
   padding-bottom: 1em;
   width: 100%;
 }
@@ -69,6 +71,8 @@
   justify-content: flex-start;
   gap: 2rem;
   margin-bottom: 2rem;
+  margin-inline: auto;
+  max-width: 1500px;
   width: 100%;
 }
 
@@ -109,7 +113,10 @@
   align-items: center;
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
+  margin-inline: auto;
+  max-width: 1500px;
 }
 
 .show__more button {
@@ -129,4 +136,35 @@
 .show__more button.active {
   border-bottom: 2px solid var(--textTertiary);
   color: var(--textMain);
+}
+
+@media (max-width: 950px) {
+  .show {
+    padding: 12em 1em 6em 1em;
+  }
+}
+
+@media (max-width: 750px) {
+  .show__main {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .show__about {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .show__heading {
+    flex-direction: column;
+  }
+  .show__header span {
+    display: block;
+  }
+
+  .show__img {
+    width: 100%;
+    height: auto;
+  }
 }

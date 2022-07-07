@@ -14,3 +14,9 @@
 .footer__link {
   text-decoration: underline;
 }
+
+@media (max-width: 950px) {
+  .footer {
+    padding: 2em 1em;
+  }
+}

@@ -1,4 +1,6 @@
 .results {
+  margin-inline: auto;
+  max-width: 1500px;
   padding: 6em 5em;
 }
 
@@ -11,4 +13,10 @@
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, 210px);
   justify-content: center;
+}
+
+@media (max-width: 950px) {
+  .results {
+    padding: 12em 1em;
+  }
 }

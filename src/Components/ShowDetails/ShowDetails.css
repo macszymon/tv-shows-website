@@ -1,8 +1,10 @@
 .show-details {
   background-color: var(--tertiary);
-  padding: 2em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-inline: auto;
+  max-width: 1500px;
+  padding: 2em;
 }
 
 .show-details h3 {
@@ -16,4 +18,18 @@
 
 .show-details__site {
   text-decoration: underline;
+}
+
+@media (max-width: 950px) {
+  .show-details {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .show-details {
+    grid-template-columns: 100%;
+    padding: 1em;
+    word-wrap: break-word;
+  }
 }
