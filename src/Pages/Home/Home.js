@@ -12,11 +12,6 @@ function Home({shows}) {
           (item) => item.weight >= 100 && item.status === 'Running'
         )}
       />
-      <ComingSoon
-        comingShows={shows.filter(
-          (item) => item.weight >= 99 && item.status === 'In Development'
-        )}
-      />
     </main>
   );
 }

@@ -39,7 +39,6 @@ function App() {
           <Route path='/search/:value' element={<Results />}/>
           <Route path='/person/:id' element={<Person />}/>
           <Route path='/trending' element={<Trending shows={shows} />}/>
-          <Route path='/comingsoon' element={<ComingSoon shows={shows} />}/>
           <Route path='*' element={<Error/>}/>
         </Routes>
         <Footer/>

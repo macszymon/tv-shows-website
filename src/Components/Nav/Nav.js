@@ -20,7 +20,6 @@ function Nav() {
       <ul className='nav__list'>
         <li className="nav__item"><NavLink to='/'>Home</NavLink></li>
         <li className="nav__item"><NavLink to='/trending'>Trending</NavLink></li>
-        <li className="nav__item"><NavLink to='/comingsoon'>Coming Soon</NavLink></li>
       </ul>
       <form className="nav__search" onSubmit={e => handleSubmit(e)}>
         <input type="text" value={searchValue} onChange={e => setSearchValue(e.target.value)} className="nav__input" placeholder='Search' />
